@@ -170,10 +170,14 @@
       "logicalLevel" : "Detail"
     }, {
       "name" : "ADerived",
-      "dataType" : "UNKNOWN",
+      "dataType" : "INT",
       "writeable" : false,
       "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS"
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 + %2",
+          "expressionObjects" : [ "logicalColumn:SampleApp Lite.D30 Product.LOB_Key", "logicalColumn:SampleApp Lite.D30 Product.Prod_Key" ]
+        }
       }
     } ],
     "logicalTableSources" : [ {
