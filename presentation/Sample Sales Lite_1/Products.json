@@ -3,6 +3,10 @@
     "name" : "Products",
     "description" : "Product dimension objects and attributes",
     "presentationColumns" : [ {
+      "name" : "Product Number",
+      "description" : "Product Key is an integer that uniquely identifies each record in the Product dimension table.",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Lite.D1 Products.Product Number"
+    }, {
       "name" : "Product",
       "description" : "Returns the product description from the Product dimension. This column is logically sorted by BIEE server according to the Product Sequence column value, and is filtered by BIEE server using the Product Number column value. Naturally drills into Office Column.",
       "sourceLogicalColumn" : "logicalColumn:SampleApp Lite.D1 Products.Product"
@@ -18,18 +22,6 @@
       "name" : "Brand",
       "description" : "Returns the Product's brand description from the Product dimension. This column is logically filtered by BIEE server using the Brand Key column value. Naturally drills into LOB Column.",
       "sourceLogicalColumn" : "logicalColumn:SampleApp Lite.D1 Products.Brand"
-    }, {
-      "name" : "Product Number",
-      "description" : "Product Key is an integer that uniquely identifies each record in the Product dimension table.",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp Lite.D1 Products.Product Number"
-    }, {
-      "name" : "Brand Key",
-      "description" : "Surrogate key for the Brand objects.",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp Lite.D1 Products.Brand Key"
-    }, {
-      "name" : "Product Sequence",
-      "description" : "Returns the product's sequence number from the Product Dimension. It is used to logically sort the Product object values",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp Lite.D1 Products.Product Sequence"
     } ],
     "hierarchies" : [ {
       "name" : "Products Hierarchy",
@@ -42,12 +34,12 @@
       }, {
         "name" : "Brands",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D1 Products.Products Brand",
-        "displayColumn" : "presentationColumn:Sample Sales Lite_1.D30 Product.Brand",
+        "displayColumn" : "presentationColumn:Sample Sales Lite.D30 Product.Brand",
         "alternateNames" : [ "Products Brand" ]
       }, {
         "name" : "LOBs",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D1 Products.Products LOB",
-        "displayColumn" : "presentationColumn:Sample Targets Lite.Products.LOB",
+        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Products.LOB",
         "alternateNames" : [ "Products LOB" ]
       }, {
         "name" : "Product Types",
@@ -57,7 +49,7 @@
       }, {
         "name" : "Products",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D1 Products.Products Detail",
-        "displayColumn" : "presentationColumn:Sample Targets Lite.Products.Product",
+        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Products.Product",
         "alternateNames" : [ "Products Detail" ]
       } ]
     } ],

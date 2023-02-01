@@ -30,22 +30,22 @@
       }, {
         "name" : "Companies",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D2 Offices.Offices Company",
-        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Offices.Company",
+        "displayColumn" : "presentationColumn:Sample Targets Lite.Offices.Company",
         "alternateNames" : [ "Company", "Offices Company" ]
       }, {
         "name" : "Orgs",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D2 Offices.Offices Organization",
-        "displayColumn" : "presentationColumn:Sample Targets Lite.Offices.Organization",
+        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Offices.Organization",
         "alternateNames" : [ "Offices Organization" ]
       }, {
         "name" : "Depts",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D2 Offices.Offices Department",
-        "displayColumn" : "presentationColumn:Sample Targets Lite.Offices.Department",
+        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Offices.Department",
         "alternateNames" : [ "Offices Department" ]
       }, {
         "name" : "Offices",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D2 Offices.Offices Detail",
-        "displayColumn" : "presentationColumn:Sample Targets Lite.Offices.Office"
+        "displayColumn" : "presentationColumn:Sample Sales Lite.More Office Objects.Office Sequence"
       } ]
     } ],
     "permissions" : [ {
