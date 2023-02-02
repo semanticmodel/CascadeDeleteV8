@@ -42,7 +42,7 @@
       }, {
         "name" : "Order Details",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D3 Orders (Facts Attributes).Order Details",
-        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Orders.Order Number"
+        "displayColumn" : "presentationColumn:Sample Sales Lite_1.Products.Product Number"
       } ]
     } ],
     "permissions" : [ {

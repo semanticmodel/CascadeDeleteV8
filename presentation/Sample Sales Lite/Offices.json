@@ -45,7 +45,7 @@
       }, {
         "name" : "Offices",
         "sourceLogicalLevel" : "logicalLevel:SampleApp Lite.D2 Offices.Offices Detail",
-        "displayColumn" : "presentationColumn:Sample Sales Lite.More Office Objects.Office Sequence"
+        "displayColumn" : "presentationColumn:Sample Sales Lite_1.More Office Objects.Office Sequence"
       } ]
     } ],
     "permissions" : [ {
