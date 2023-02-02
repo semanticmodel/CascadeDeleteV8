@@ -213,7 +213,8 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Brand" ],
-        "displayKey" : "Brand"
+        "displayKey" : "Brand",
+        "preferredDrillPath" : [ "logicalLevel:SampleApp Lite_CD.D0 Time.Month" ]
       }, {
         "name" : "Products LOB",
         "numberOfElements" : 1,
