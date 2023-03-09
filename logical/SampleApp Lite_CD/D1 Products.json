@@ -158,8 +158,8 @@
       "logicalColumnSource" : {
         "derivedFrom" : "LOGICAL_COLUMNS",
         "logicalExpression" : {
-          "expressionTemplate" : "concat(%1, %2)",
-          "expressionObjects" : [ "logicalColumn:SampleApp Lite_CD.D30 Product.Prod_Dsc", "logicalColumn:SampleApp Lite_CD.D30 Product.Attribute_2" ]
+          "expressionTemplate" : "concat(%1 , %2)",
+          "expressionObjects" : [ "logicalColumn:SampleApp Lite_CD.D2 Offices.Office", "logicalColumn:SampleApp Lite_CD.D30 Product.Attribute_2" ]
         }
       }
     }, {
@@ -228,7 +228,8 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Product Type" ],
-        "displayKey" : "Product Type"
+        "displayKey" : "Product Type",
+        "preferredDrillPath" : [ "logicalLevel:SampleApp Lite_CD.D30 Product.Products Brand" ]
       }, {
         "name" : "Products Detail",
         "numberOfElements" : 15,

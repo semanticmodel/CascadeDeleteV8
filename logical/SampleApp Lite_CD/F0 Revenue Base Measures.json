@@ -380,6 +380,17 @@
         "dataIsDense" : false,
         "aggregateByLevels" : [ "logicalLevel:SampleApp Lite_CD.D1 Products.Total Products" ]
       }
+    }, {
+      "name" : "OfficeRevenue",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "CONCAT(%1 , %2 )",
+          "expressionObjects" : [ "logicalColumn:SampleApp Lite_CD.D2 Offices.Company", "logicalColumn:SampleApp Lite_CD.D30 Product.Brand" ]
+        }
+      }
     } ],
     "logicalTableSources" : [ {
       "name" : "LTS1 Revenue Facts (Order grain)",
@@ -405,7 +416,7 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:Sample App Lite Data.F11 Revenue Facts Aggregate" ]
       },
-      "dataGranularity" : [ "logicalLevel:SampleApp Lite_CD.D0 Time.Month", "logicalLevel:SampleApp Lite_CD.D1 Products.Products Detail", "logicalLevel:SampleApp Lite_CD.D2 Offices.Total Offices", "logicalLevel:SampleApp Lite_CD.D3 Orders (Facts Attributes).Total Orders" ],
+      "dataGranularity" : [ "logicalLevel:SampleApp Lite_CD.D0 Time.Month", "logicalLevel:SampleApp Lite_CD.D1 Products.Products Detail", "logicalLevel:SampleApp Lite_CD.D2 Offices.Total Offices", "logicalLevel:SampleApp Lite_CD.D3 Orders (Facts Attributes).Total Orders", "logicalLevel:SampleApp Lite_CD.D30 Product.Detail" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
